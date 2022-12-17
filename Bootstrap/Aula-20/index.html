@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Campos de Checagem</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="mb-3 form-check form-check-reverse">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+        </div>
+        <hr>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="n">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+        </div>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="u">
+            <label for="novo" class="form-check-label">Produto Usado</label>
+        </div>
+        <hr>
+        <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregarapida" class="btn-check">
+            <label for="entregarapida" class="btn btn-outline-primary">Entrega Rápida</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregalenta" class="btn-check">
+            <label for="entregalenta" class="btn btn-outline-primary">Entrega Lenta</label>
+        </div>
+    </div>
+</body>
+</html>

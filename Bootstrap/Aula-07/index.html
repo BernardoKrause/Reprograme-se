@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Formatação de Colunas</title>
+    <style>
+        .row{
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row align-items-xxl-start justify-content-evenly">
+            <div class="col-3 offset-1 order-2">Coluna 1</div>
+            <div class="col-3 order-0">Coluna 2</div>
+            <div class="col-3 order-1">Coluna 3</div>
+        </div>
+        <div class="row">
+            <div class="col-3">DIV 1</div>
+            <div class="col-3 ms-auto">DIV 2</div>
+        </div>
+        <div class="row">
+            <div class="col-3 mx-auto">DIV 1</div>
+        </div>
+    </div>
+</body>
+</html>

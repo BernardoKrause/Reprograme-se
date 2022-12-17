@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" id="ads" data-bs-touch="false">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Título do Slide 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit illo provident minima, 
+                            a nam perferendis officia, in consectetur recusandae reprehenderit neque tempora! Praesentium, 
+                            totam velit vitae tempora obcaecati dolore.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

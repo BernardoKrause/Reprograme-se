@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="120">
+    <defs>
+        <linearGradient id="degrade" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="black" stop-opacity=".5" />
+            <stop offset="100%" stop-color="black" stop-opacity="1" />
+        </linearGradient>
+    </defs>
+    <rect width="100%" height="120" fill="url(#degrade)" />
+    <g dominant-baseline="middle" text-anchor="start">
+        <text x="20" y="45%" fill="white" font-size="56" font-family="sans-serif">
+            Bernardo Krause Rodrigues
+        </text>
+        <text x="20" y="75%" fill="white" font-size="16" font-family="sans-serif">
+            &lt;Designer e Desenvolvedor Web&gt;
+        </text>
+    </g>
+</svg>

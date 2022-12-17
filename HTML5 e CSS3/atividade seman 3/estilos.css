@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corAzul: #4056a1;
+    --corBege: #efe2ba;
+    --corMarrom: #d79922;
+    --corVermelho: #f13c20;
+    --corClara: #c5cbe3;
+    --corEscura: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* 1. trocar a cor de fundo para #eee */
+    background-color: #eee;
+}
+
+a {
+    /* 2. remover sublinhado dos links */
+    text-decoration: none;
+    color: var(--corEscura);
+}
+
+.conteiner {
+    width: 80vw;
+    /* 3. centralizar no elemento pai */
+    margin: auto;
+    /* 4. altura MÍNIMA de 100% da altura da área de visualização */
+    min-height: 100vh;
+}
+
+.areaesquerda {
+    width: 18vw;
+    background-color: white;
+    /* 5. posicionamento fixo */
+    position: fixed;
+    /* 6. altura de 100% da área de visualização */
+    height: 100vh;
+    padding: 15px;
+    top: 0px;
+}
+
+.areaesquerda .logo img {
+    /* 7. largura de 100% do elemento pai */
+    width: 100%;
+    /* 8. cantos arredondados de 10 pixels */
+    border-radius: 10px;
+}
+
+.areaesquerda p img {
+    width: 20px;
+    /* 9. mostrar como blocos em linha */
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.areaesquerda p a {
+    font-size: 20px;
+}
+
+.social img {
+    /* 10. largura de 20 pixels */
+    width: 20px;
+    /* 11. mostrar como blocos em linha */
+    display: inline-block;
+    margin-right: .01vw !important;
+}
+
+.areadireita {
+    /* 12. largura de 62% da área de visualização */
+    width: 62vw;
+    /* 13. posicionamento relativo */
+    position: relative;
+    /* 14. afastamento esquerdo de 18% */
+    left: 18%;
+    background-color: #eee;
+    padding: 15px;
+}
+
+.areadireita h1 b {
+    font-size: 3rem;
+    color: var(--corEscura);
+}
+
+.areadireita hr {
+    border: 0;
+    height: 8px;
+    background-color: #ddd;
+    /* 15. margem superior e inferior de 15px e de 0px nas laterais */
+    margin: 15px 0px;
+    clear: both;
+}
+
+.card {
+    width: calc((100% - 1.6rem)/3);
+    background-color: white;
+    /* 16. mostrar como blocos em linha */
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+}
+
+.sobre .hero {
+    position: relative;
+    background-color: white;
+}
+
+.sobre .hero .texto {
+    width: 35%;
+    /* 17. flutuação à esquerda */
+    float: left;
+    /* 18. alinhamento vertical superior */
+    vertical-align: text-top;
+    padding: 30px;
+}
+
+.sobre .hero .texto h2 {
+    font-size: 2vw;
+}
+
+.sobre .hero .imagem {
+    /* 19. flutuação à esquerda */
+    float: left;
+    width: 65%;
+}
+
+.sobre .hero .imagem img {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn {
+    background-color: var(--corEscura);
+    color: white;
+    /* 20. margens internas superiores e inferiores de 15px e laterais de 30px */
+    padding: 15px 30px;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 1.3vw;
+}
+
+.btn:hover {
+    background-color: white;
+    /* 21. cor igual à variável "corEscura" */
+    color: var(--corEscura);
+    outline: solid 1px var(--corEscura);
+    outline-offset: -1;
+}
+
+.progresso {
+    height: 3vw;
+    /* 22. largura de 100% do elemento pai */
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progresso div {
+    background-color: var(--corEscura);
+    /* 23. altura de 3% da área de visualização */
+    height: 3vh;
+    display: inline-block;
+    color: white;
+    /* 24. linha de texto com de 3% de altura da área de visualização */
+    font-weight: 3vh;
+    text-align: center;
+}
+
+.precos table {
+    width: 100%;
+    /* 25. remoção de espaços entre células da tabela */
+    margin: 0;
+    text-align: center;
+    border: solid 1px #ddd;
+}
+
+.precos table td {
+    padding: 15px;
+    /* 26. largura de 1/3 do elemento pai */
+    width: 33%;
+    border: solid 1px #ddd;
+}
+
+.contato {
+    background-color: #888;
+    padding: 15px;
+    color: white;
+}
+
+.contato a {
+    color: white;
+}
+
+.contato table {
+    width: 100%;
+    text-align: center;
+    /* 27. borda cinza clara de 1px */
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.contato table td {
+    /* 28. largura de 1/3 do elemento pai */
+    width: 33%;
+    padding: 15px;
+    border: solid 1px #ccc;
+}
+
+.contato table img {
+    /* 29. largura de 64px */
+    width: 64px;
+}
+
+.contato label {
+    font-size: 1.3vw;
+}
+
+.contato input,
+.contato select,
+.contato textarea {
+    /* 30. margem interna de 15px */
+    padding: 15px;
+    font-size: 1.3vw;
+    font-family: 'Montserrat';
+    width: 100%;
+}
+
+.rodape {
+    /* 31. texto centralizado */
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+}

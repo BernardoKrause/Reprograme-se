@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem SVG</h1>
+    <hr>
+    <svg width="100" heigth="100">
+        <circle cx="50" cy="50" r="30"
+        stroke="green" stroke-width="4" fill="yellow">
+    </svg>
+    <svg width="100" heigth="100">
+        <rect width="60" height="30" x="2" y="2"
+        stroke="green" stroke-width="4" fill="yellow" fill-opacity="0.5"
+        stroke-opacity="0.5" rx="10" ry="10">
+    </svg>
+    <svg width="100" heigth="100">
+        <ellipse cx="50" cy="50"
+        stroke="green" stroke-width="4" fill="yellow" rx="45" ry="20">
+    </svg>
+    <svg width="100" heigth="100">
+        <line x1="0" y1="0" x2="100" y2="100"
+        stroke="green" stroke-width="4">
+    </svg>
+    <svg width="202" heigth="202">
+        <polygon points="100,10,40,198,190,78,10,78,160,198"
+        fill-rule="evenodd"
+        stroke="green" stroke-width="4"
+        fill="yellow">
+    </svg>
+    <svg width="202" heigth="202">
+        <polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160"
+         stroke="green" stroke-width="4"
+         fill="none" />
+    </svg>
+    <svg width="600" heigth="300">
+        <rect width="596" height="296"
+            fill="none" stroke="black"
+            stroke-width="4" x="2" y="2"/>
+        <text x="300" y="150"
+            text-anchor="middle">
+            SVG é sensacional!
+        </text>
+    </svg>
+    <svg width="600" heigth="300">
+        <rect width="596" height="296"
+            fill="none" stroke="black"
+            stroke-width="4" x="2" y="2"/>
+        <rect width="60" height="30"
+        fill="yellow" stroke="black"
+        stroke-width="4" x="10" y="10"
+        id="r1" />
+        <animate xlink:href="#r1"
+        attributeName="width" from="10" to="600"
+        dur="2s" begin="2s" fill="remove"
+        repeatCount="1">
+    </svg>
+</body>
+</html>

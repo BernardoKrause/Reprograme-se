@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de Inputs</h1>
+    <form action="form.php">
+        <input type="text" size="60" required list="minhaLista">
+        <datalist id="minhaLista">
+            <option value="valor1">
+            <option value="valor2">
+            <option value="valor3">
+        </datalist>
+        <input type="text" size="60"
+         maxlength="20" required autocomplete="off">
+
+        <input type="text" pattern="[A-Z]{3}-[0-9]{4}" required>
+        <input type="password">
+
+        <input type="radio" name="EstadoCivil" value="C"> Casado <br>
+        <input type="radio" name="EstadoCivil" value="S"> Solteiro <br>
+        <input type="radio" name="EstadoCivil" value="O"> Outro <br>
+
+        <input type="checkbox" name="noticias"> noticias
+        <input type="checkbox" name="promocoes"> promocoes
+        <input type="checkbox" name="alertas"> alertas
+
+        <input type="button" value="Enviar"> 
+
+        <input type="submit" value="Enviar" onclick="this.form.submit();">
+        <input type="color">
+        <input type="date" min="1979-07-01" max="1980-05-20">
+        <input type="datetime-local" min="1979-07-01T00:00:00" max="1980-05-20T00:00:00">
+        <input type="file">
+        <input type="hidden" name="id" value="451">
+        <input type="number" name="valor" min="100" max="1000" step="50">
+        <input type="range" name="valor" min="100" max="1000" step="50">
+        <input type="search" name="termo">
+        <input type="tel" name="telefone">
+        <input type="time" name="horaMarcada" min="00:00:00" max="18:00:00">
+        <input type="url" name="enderecoSite">
+        <input type="week" min="2021-W18" max="2021-W25">
+
+    </form>
+</body>
+</html>

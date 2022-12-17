@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práticas Sugeridas da Aula 07</title>
+</head>
+
+<body>
+    <h1>Práticas Sugeridas da Aula 07</h1>
+    <hr>
+    <h2>1. Usando HTML, crie imagens SVG semelhantes às mostradas nas figuras a seguir</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="48" stroke="black" stroke-width="4" fill="blue" id="teste" />
+    </svg>
+    <svg width="100" height="100">
+        <ellipse cx="50" cy="50" rx="44" ry="22" stroke="black" stroke-width="3" fill="lightgray" />
+    </svg>
+    <svg width="100" height="100">
+        <polygon points="20,96,4,40,50,4,96,40,80,96" stroke="blue" stroke-width="8" fill="darkorange" />
+    </svg>
+    <svg width="100" height="100">
+        <rect width="50" height="50" x="25" y="25" stroke="darkorange" stroke-width="10" fill="red" rx="10" ry="10" />
+    </svg>
+    <svg width="100" height="100">
+        <polygon points="2,35,20,2,60,40,75,15,98,40,65,92" stroke="black" stroke-width="4" fill="white" />
+    </svg>
+    <hr>
+    <h2>2. Adicione uma animação à figura do pentágono para que ele gire continuamente</h2>
+    <svg width="100" height="100">
+        <polygon id="pentagono" points="20 96,4 40,50 4,96 40,80 96" stroke="blue" stroke-width="8" fill="darkorange" />
+        <animate xlink:href="#pentagono" attributeName="points" from="20 96,4 40,50 4,96 40,80 96"
+            to="4 40,50 4,96 40,80 96, 20 96" dur="10s" begin="2s" repeatCount="indefinite" />
+    </svg>
+    <hr>
+    <h2>3. Usando figura do tipo polígono, crie uma imagem SVG semelhante à da figura a seguir:</h2>
+    <svg width="100" height="100">
+        <polygon points="0,15,25,25,10,0,90,0,75,25,75,25,100,15,100,85,75,75,90,100,10,100,25,75,0,85," fill="red" />
+    </svg>
+    <hr>
+    <h2>4. DESAFIO! Faça uma imagem animada de carregamento, conforme a imagem a seguir, que fique girando
+        continuamente.</h2>
+    <svg width="100" height="100">
+        <circle cx="80" cy="22" r="3.5" fill="darkgray" id="load1" />
+        <animate xlink:href="#load1" attributeName="cx" from="80" to="91" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load1" attributeName="cy" from="22" to="43" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="91" cy="43" r="4" fill="darkgray" id="load2" />
+        <animate xlink:href="#load2" attributeName="cx" from="91" to="88" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load2" attributeName="cy" from="43" to="67" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="88" cy="67" r="4.5" fill="darkgray" id="load3" />
+        <animate xlink:href="#load3" attributeName="cx" from="88" to="70" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load3" attributeName="cy" from="67" to="86" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="70" cy="86" r="5" fill="darkgray" id="load4" />
+        <animate xlink:href="#load4" attributeName="cx" from="70" to="43" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load4" attributeName="cy" from="86" to="90" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="43" cy="90" r="5.5" fill="darkgray" id="load5" />
+        <animate xlink:href="#load5" attributeName="cx" from="43" to="19" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load5" attributeName="cy" from="90" to="75" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="19" cy="75" r="6" fill="darkgray" id="load6" />
+        <animate xlink:href="#load6" attributeName="cx" from="19" to="11" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load6" attributeName="cy" from="75" to="49" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="11" cy="49" r="6.5" fill="darkgray" id="load7" />
+        <animate xlink:href="#load7" attributeName="cx" from="11" to="23" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load7" attributeName="cy" from="49" to="23" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="23" cy="23" r="7" fill="darkgray" id="load8" />
+        <animate xlink:href="#load8" attributeName="cx" from="23" to="52" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load8" attributeName="cy" from="23" to="12" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <circle cx="52" cy="12" r="3" fill="darkgray" id="load9" />
+        <animate xlink:href="#load9" attributeName="cx" from="52" to="80" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+        <animate xlink:href="#load9" attributeName="cy" from="12" to="22" dur="1s" begin="2s"
+            repeatCount="indefinite" />
+    </svg>
+
+</body>
+
+</html>

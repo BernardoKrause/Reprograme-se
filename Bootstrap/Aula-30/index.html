@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./Aula30.js" defer></script>
+    <title>Mensagens Flutuantes</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <button class="btn btn-primary" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria um novo <b>toast</b>."
+        data-bs-html="true" data-bs-placement="top">Criar Toast</button>
+
+        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
+
+        <div class="toast" id="toast">
+            <div class="toast-header">
+                <i class="bi-info-circle me-1"></i>
+                <strong class="me-auto">Informação</strong>
+                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Perspiciatis nulla doloribus delectus vero tempore repudiandae 
+                accusantium quos molestiae? Commodi, possimus.
+            </div>
+        </div>
+        <hr>
+        <div class="toast text-bg-success" data-bs-delay="5000">
+            <div class="toast-body">
+                Chegaram novas mensagens eu sua caixa postal.
+                <div class="mt-2 pt-2 border-top">
+                    <button class="btn btn-primary btn-sm">Visualizar</button>
+                    <button class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ignorar</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <button class="btn btn-primary" id="btnToast" data-bs-toggle="popover" 
+        data-bs-title="Informação" data-bs-content="Esta é uma informação qualquer." data-bs-placement="top">Criar Toast</button>
+    
+            <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <form method="post">
+        <p>
+            <label for="txtNomeCompleto">Nome Completo</label><br>
+            <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Fulado de Tal">
+        </p>
+        <p>
+            <label for="txtEmail">E-mail</label><br>
+            <input type="text" name="Email" id="txtEmail" placeholder="email@gmail.com">
+        </p>
+        <fieldset>
+            <legend>Cargo Pretendido</legend>
+            <input type="radio" name="Cargo" id="rdProgramador" value="P">
+            <label for="rdProgramador">Programador</label><br>
+            <input type="radio" name="Cargo" id="rdWebDesigner" value="W">
+            <label for="rdWebDesigner">Web Designer</label>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="Aceito" id="chkAceito">
+            <label for="chkAceito">Aceito os termos de uso</label>
+        </p>
+        <p>
+            <label for="slctEstado">Estado</label>
+            <select name="Estado" id="slctEstado">
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondônia</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES" selected>Espírito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="slctLinguagens">Linguagens de Programação</label><br>         
+            <select name="Linguagens" id="slctLinguagens" size="2" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+            </select>
+        </p>
+        <p>
+            <label for="txtCidade">Cidade</label><br>
+            <input type="text" name="Cidade" id="txtCidade" list="cidades">
+            <datalist id="cidades">
+                <option value="Manaus">
+                <option value="Porto Velho">
+                <option value="São Paulo">
+            </datalist>
+        </p>
+        <p>
+            <label for="txtCurriculo">Curriculo</label><br>
+            <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+</html>

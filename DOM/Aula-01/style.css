@@ -1,0 +1,11 @@
+.cidade-es {
+    text-indent: 3ch;
+    border: 2px solid pink;
+    background-color: lightblue;
+}
+
+.cidade-mg {
+    text-indent: 3ch;
+    border: 2px solid darkred;
+    background-color: snow;
+}

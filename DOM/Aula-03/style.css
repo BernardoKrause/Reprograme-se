@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-size: 13pt;
+}
+
+body {
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #888;
+    color: white;
+    padding: 12px;
+}
+
+input, select {
+    padding: 12px;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 12px;
+}

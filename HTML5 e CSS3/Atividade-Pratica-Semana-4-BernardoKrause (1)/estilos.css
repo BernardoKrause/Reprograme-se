@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4056a1;
+    --secondary: #efe2ba;
+    --success: #d79922;
+    --danger: #f13c20;
+    --light: #c5cbe3;
+    --dark: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    min-width: 640px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.conteiner {
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 100vw;
+    position: relative;
+}
+
+.areaesquerda {
+    width: 18vw;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 1.5rem;
+    top: 0px;
+}
+
+.areaesquerda .logo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu p {
+    margin-bottom: 1rem;
+}
+
+.menu img {
+    width: 20px;
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.menu a {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.social img {
+    width: 20px;
+    display: inline-block;
+    margin-right: .01vw !important;
+}
+
+.areadireita {
+    width: 62vw;
+    position: relative;
+    left: 18vw;
+    background-color: #eee;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas:
+        "cabecalho"
+        "sobre"
+        "projetos"
+        "precos"
+        "contato"
+        "rodape";
+}
+
+div.cabecalho {
+    grid-area: cabecalho;
+}
+
+div.sobre {
+    grid-area: sobre;
+}
+
+div.projetos {
+    grid-area: projetos;
+}
+
+div.precos {
+    grid-area: precos;
+}
+
+div.contato {
+    grid-area: contato;
+}
+
+div.rodape {
+    grid-area: rodape;
+}
+
+.areadireita h1 b {
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+.areadireita hr {
+    border: 0;
+    height: 8px;
+    background-color: #ddd;
+    margin: 15px 0;
+    clear: both;
+}
+
+.sobre .hero {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 3.1fr 5fr;
+    grid-auto-rows: 25vw;
+}
+
+.sobre .hero .texto {
+    padding: 30px;
+}
+
+.sobre .hero .texto h2 {
+    font-size: 2vw;
+}
+
+.sobre .hero .imagem {
+    overflow: hidden;
+}
+
+.sobre .hero .imagem img {
+    height: 100%;
+}
+
+.btn {
+    background-color: var(--dark);
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 1.3vw;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--dark);
+    outline: solid 1px var(--dark);
+    outline-offset: -1;
+}
+
+.progresso {
+    height: 3vw;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progresso div {
+    background-color: var(--dark);
+    height: 3vw;
+    display: inline-block;
+    color: white;
+    line-height: 3vw;
+    text-align: center;
+}
+
+.projetos .conteudo-secao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 1.5rem;
+}
+
+.card {
+    width: calc(33.33% - 1rem);
+    background-color: white;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+}
+
+.precos table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: solid 1px #ddd;
+}
+
+.precos table td {
+    padding: 15px;
+    width: 33.33%;
+    border: solid 1px #ddd;
+}
+
+.titulo-secao {
+    margin: 1rem 0;
+}
+
+.contato .conteudo-secao {
+    background-color: #888;
+    padding: 1.5rem;
+    color: white;
+}
+
+.contato a {
+    color: white;
+}
+
+.contato table {
+    width: 100%;
+    text-align: center;
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+}
+
+.contato table td {
+    width: 33.33%;
+    padding: 1.5rem;
+    border: solid 1px #ccc;
+}
+
+.contato table img {
+    height: 64px;
+}
+
+.contato label {
+    font-size: 1.3vw;
+}
+
+.contato input,
+.contato select,
+.contato textarea {
+    padding: 15px;
+    font-size: 1.3vw;
+    font-family: 'Montserrat';
+    width: 100%;
+}
+
+.rodape {
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+}
+
+/* 1. Configurações CSS para telas de até 1280px de largura*/
+@media screen and (
+
+    max-width: 1280px
+) {
+    .areaesquerda {
+        /* 2. Posicionamento estático */
+        position: static;
+        /* 3. Largura de 80% da largura área de visualização */
+        width: 80vw;
+        /* 4. Altura automática */
+        height: auto;
+    }
+
+    .areaesquerda .brand {
+        /* 5. Contêiner flexbox */
+        display: flex;
+        /* 6. Espaço de 1rem entre itens flexbox */
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .areaesquerda .menu {
+        /* 7. Contêiner flexbox */
+        display: flex;
+        /* 8. Espaço de 3vw entre itens flexbox */
+        gap: 3vw;
+    }
+
+    .areaesquerda .menu img {
+        /* 9. Largura de 2.5% da largura área de visualização */
+        width: 2.5vw;
+        /* 10. Margem direita de 0.6% da largura área de visualização */
+       margin-right: 0.6vw;
+    }
+
+    .areaesquerda .menu a {
+        /* 11. Tamanho de fonte de 2.5% da largura área de visualização */
+        font-size: 2.5vw;
+    }
+
+    .areaesquerda h2 {
+        /* 12. Alinhamento vertical superior */
+        vertical-align: top;
+        /* 13. Margens zeradas (forçar) */
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .areaesquerda .logo {
+        width: 20vw;
+        border-radius: 10px;
+    }
+
+    .cabecalho {
+        /* 14. Ocultar elemento */
+        visibility: hidden;
+    }
+
+    #subtituloPrincipal {
+        /* 15. Mostrar elemento */
+        visibility: visible;
+    }
+
+    .areadireita {
+        width: 80vw;
+        padding: 0;
+        /* 16. Posicionamento estático */
+        position: static;
+        /* 17. Margem interna superior de 0.5rem */
+        padding-top: 0.5rem;
+    }
+
+    .sobre .hero {
+        /* 18. Grid de duas colunas iguais */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre .hero img {
+        width: 100%;
+        /* 19. Altura automática (forçar) */
+        height: auto;
+    }
+
+    .sobre .hero .texto h2 {
+        font-size: 2.5vw;
+    }
+
+    .card {
+        /* 20. Largura de 50% do elemento pai, menos 0.75rem (use função calc() ) */
+        width: calc(50% - 0.75rem);
+    }
+
+    .contato input,
+    .contato select,
+    .contato textarea,
+    .contato label,
+    .btn {
+        font-size: 2vw;
+
+    }
+
+    .rodape {
+        font-size: 2vw;
+    }
+}
